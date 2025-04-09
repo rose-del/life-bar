@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barra de Vida</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Barra de Vida (Life Bar)</h1>
+        
+        <div class="painel-status">
+            <div class="personagem">
+                <img id="gojoImg" src="images/Satoru-Gojo.png" alt="Satoru Gojo">
+            </div>
+        </div>
+
+        <div class="life-bar">
+            <div class="life-fill" id="lifeFill"></div>
+        </div>
+        <p id="lifeText">Vida: 100</p>
+
+        <div class="buttons">
+            <button onclick="tomarDano()">Levar Dano</button>
+            <button onclick="curarDano()">Curar</button>
+            <button onclick="reiniciarVida()">Resetar</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
